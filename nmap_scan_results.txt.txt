@@ -1,0 +1,33 @@
+# Nmap scan report 1: Remote IP scan
+# Command used:
+nmap -sV <target-ip>
+
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2025-06-29 05:59 EDT
+Nmap scan report for <target-ip>
+Host is up (0.0034s latency).
+Not shown: 995 filtered tcp ports (no-response)
+PORT     STATE SERVICE       VERSION
+135/tcp  open  msrpc         Microsoft Windows RPC
+139/tcp  open  netbios-ssn   Microsoft Windows netbios-ssn
+445/tcp  open  microsoft-ds?
+902/tcp  open  ssl/vmware-auth VMware Authentication Daemon 1.x (Uses VNC, SOAP)
+912/tcp  open  vmware-auth   VMware Authentication Daemon 1.x (Uses VNC, SOAP)
+
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Nmap done: 1 IP address (1 host up) scanned in 29.75 seconds
+
+---
+
+# Nmap scan report 2: Localhost
+# Command used:
+nmap -sV localhost
+
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2025-06-29 05:58 EDT
+Nmap scan report for localhost (127.0.0.1)
+Host is up (0.000010s latency).
+Other addresses for localhost (not scanned): ::1
+All 1000 scanned ports on localhost (127.0.0.1) are in ignored states.
+Not shown: 1000 closed tcp ports (reset)
+
+Nmap done: 1 IP address (1 host up) scanned in 0.72 seconds
